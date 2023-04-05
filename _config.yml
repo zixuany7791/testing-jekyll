@@ -17,7 +17,7 @@ defaults:
       path: ""
     values:
       layout: "default"
-
+baseurl: "testing-jekyll"
 plugins:
   - jekyll-feed
   - jekyll-sitemap

@@ -1,0 +1,12 @@
+
+  <nav class="navbar bg-body-tertiary">
+    <ul class="nav nav-tabs">
+      {% for item in site.data.navigation %} <!-- a loop for making nav-item on navbar as much times as the number of items in the _data/navigiation.yml-->
+      <li class="nav-item">
+        <a href="{{ item.link }}" class="nav-link {% if page.url == item.link %}active{% endif %}"> <!-- if the page link is the same as the item link then add "active" so it will be easier to find where you are at in the navbar -->
+          {{ item.name }} <!--Items name and item are stored in _data/navigation.yml -->
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
